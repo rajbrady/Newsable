@@ -1,0 +1,6 @@
+framework module Pods_GTHacks_GTHacksUITests {
+  umbrella header "Pods-GTHacks-GTHacksUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
