@@ -19,6 +19,9 @@
 		00F5D35A253AE39800712A53 /* NewsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F5D359253AE39800712A53 /* NewsPage.swift */; };
 		00F5D35C253AE90200712A53 /* AddNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F5D35B253AE90200712A53 /* AddNews.swift */; };
 		26D2E6057D0E735137B87BE5 /* Pods_GTHacksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A9D5E50C0A22BE92E0506B /* Pods_GTHacksTests.framework */; };
+		463672C2253BE17000A2818F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463672C1253BE17000A2818F /* DataManager.swift */; };
+		463672C7253C38AA00A2818F /* ShowLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463672C6253C38AA00A2818F /* ShowLink.swift */; };
+		46BEEB3E253BD876003F2B72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46BEEB3D253BD876003F2B72 /* GoogleService-Info.plist */; };
 		4B784A70B610B78C67260BA7 /* Pods_GTHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0134D3286681173D4D0B7BA7 /* Pods_GTHacks.framework */; };
 		FCBC2380C456592A49A710DF /* Pods_GTHacks_GTHacksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54092E3AEFC68C610FF5DFF7 /* Pods_GTHacks_GTHacksUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		0134D3286681173D4D0B7BA7 /* Pods_GTHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D235B2F4F40A2506ADE3DD /* Pods-GTHacks-GTHacksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTHacks-GTHacksUITests.debug.xcconfig"; path = "Target Support Files/Pods-GTHacks-GTHacksUITests/Pods-GTHacks-GTHacksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40A9D5E50C0A22BE92E0506B /* Pods_GTHacksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTHacksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463672C1253BE17000A2818F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		463672C6253C38AA00A2818F /* ShowLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLink.swift; sourceTree = "<group>"; };
+		46BEEB3D253BD876003F2B72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		54092E3AEFC68C610FF5DFF7 /* Pods_GTHacks_GTHacksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTHacks_GTHacksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57187F920AC96B3534654148 /* Pods-GTHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTHacks.debug.xcconfig"; path = "Target Support Files/Pods-GTHacks/Pods-GTHacks.debug.xcconfig"; sourceTree = "<group>"; };
 		61F90BBEDC2B7923C8233AD4 /* Pods-GTHacks-GTHacksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTHacks-GTHacksUITests.release.xcconfig"; path = "Target Support Files/Pods-GTHacks-GTHacksUITests/Pods-GTHacks-GTHacksUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,11 +133,14 @@
 				003BFDC1253A95C800AAB24A /* SceneDelegate.swift */,
 				003BFDC3253A95C800AAB24A /* ViewController.swift */,
 				003BFDC5253A95C800AAB24A /* Main.storyboard */,
+				463672C6253C38AA00A2818F /* ShowLink.swift */,
 				00F5D35B253AE90200712A53 /* AddNews.swift */,
 				00F5D359253AE39800712A53 /* NewsPage.swift */,
 				003BFDC8253A95CA00AAB24A /* Assets.xcassets */,
 				003BFDCA253A95CA00AAB24A /* LaunchScreen.storyboard */,
+				46BEEB3D253BD876003F2B72 /* GoogleService-Info.plist */,
 				003BFDCD253A95CA00AAB24A /* Info.plist */,
+				463672C1253BE17000A2818F /* DataManager.swift */,
 			);
 			path = GTHacks;
 			sourceTree = "<group>";
@@ -287,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				003BFDCC253A95CA00AAB24A /* LaunchScreen.storyboard in Resources */,
+				46BEEB3E253BD876003F2B72 /* GoogleService-Info.plist in Resources */,
 				003BFDC9253A95CA00AAB24A /* Assets.xcassets in Resources */,
 				003BFDC7253A95C800AAB24A /* Main.storyboard in Resources */,
 			);
@@ -416,9 +426,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463672C7253C38AA00A2818F /* ShowLink.swift in Sources */,
 				00F5D35C253AE90200712A53 /* AddNews.swift in Sources */,
 				00F5D35A253AE39800712A53 /* NewsPage.swift in Sources */,
 				003BFDC4253A95C800AAB24A /* ViewController.swift in Sources */,
+				463672C2253BE17000A2818F /* DataManager.swift in Sources */,
 				003BFDC0253A95C800AAB24A /* AppDelegate.swift in Sources */,
 				003BFDC2253A95C800AAB24A /* SceneDelegate.swift in Sources */,
 				003BFDF0253AB01500AAB24A /* IMDBReviewClassifier.mlmodel in Sources */,

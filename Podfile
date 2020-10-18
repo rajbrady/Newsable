@@ -7,6 +7,11 @@ target 'GTHacks' do
 
   # Pods for GTHacks
   pod 'SwiftSoup'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
+  pod 'Firebase'
  
 
   target 'GTHacksTests' do
